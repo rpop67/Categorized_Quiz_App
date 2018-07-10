@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz_app_abnd_project.scoreScreen">
+
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/peach" />
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:background="@color/navy" />
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="80dp"
+        android:background="@drawable/timer_hard"
+        android:gravity="center"
+        android:text="56"
+        android:textColor="@color/navy"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Better luck next time "
+        android:textColor="@color/Gray"
+        android:textSize="30sp" />
+</RelativeLayout>
+
+

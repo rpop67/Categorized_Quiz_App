@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/hard"
+    tools:context="com.example.android.quiz_app_abnd_project.hard">
+
+
+    <RelativeLayout
+        android:id="@+id/headerTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/timer_hard"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/hard"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_width="40dp"
+            android:layout_height="90dp"
+            android:layout_toRightOf="@id/min"
+            android:gravity="center"
+            android:text=" : "
+            android:textColor="@color/hardLight"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/sec"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_toRightOf="@id/colon"
+            android:background="@drawable/timer_hard"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/hard"
+            android:textSize="35sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerTimer"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-->***********************Question 0 ****************** <-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/hardLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Which is the original logo of pepsi?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/q0o1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pep_logo1"
+                            android:buttonTint="@android:color/transparent" />
+
+                        <RadioButton
+                            android:id="@+id/q0o2"
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="80dp"
+                            android:background="@drawable/pep_logo2"
+                            android:buttonTint="@android:color/transparent" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-->********************QUESTION 1**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/hardLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What does a herpetologist study?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/q1o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/hard"
+                            android:text="Facial Expressions"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q1o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:buttonTint="@color/hard"
+                            android:text="Amphibians,reptiles"
+                            android:textColor="@color/kidsText" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-->********************QUESTION 2**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/hardLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The 'Red Triangle' symbol denotes"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/q2o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/hard"
+                            android:text="Air India"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q2o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:buttonTint="@color/hard"
+                            android:text="Family Planning"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q2o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+                            android:buttonTint="@color/hard"
+                            android:text="Seoul"
+                            android:textColor="@color/kidsText" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 3**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/hardLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What is the currency of Greece?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/q3o"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/hard"
+                        android:gravity="center"
+                        android:textColor="@color/kidsText"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 4**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/hardLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="English is an official language in:"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:id="@+id/q4o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:buttonTint="@color/hard"
+                            android:text="India"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o1"
+                            android:buttonTint="@color/hard"
+                            android:text="Singapore"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o2"
+                            android:buttonTint="@color/hard"
+                            android:text="South Korea"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o3"
+                            android:buttonTint="@color/hard"
+                            android:text="Kenya"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o4"
+                            android:buttonTint="@color/hard"
+                            android:text="Barbados"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o5"
+                            android:buttonTint="@color/hard"
+                            android:text="Pakistan"
+                            android:textColor="@color/kidsText" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 5********************<-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/hardLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Which planet is named after the Roman god of war?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+
+                            android:id="@+id/q5o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/hard"
+                            android:text="Venus"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q5o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43dp"
+                            android:buttonTint="@color/hard"
+                            android:text="Mars"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q5o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43dp"
+                            android:buttonTint="@color/hard"
+                            android:text="Saturn"
+                            android:textColor="@color/kidsText" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/hardLight"
+                android:elevation="7dp"
+                android:onClick="CalcScore"
+                android:text="SUBMIT"
+                android:textColor="@color/kidsText" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+

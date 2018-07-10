@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/easy"
+    tools:context="com.example.android.quiz_app_abnd_project.Easy">
+
+
+    <RelativeLayout
+        android:id="@+id/headerTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/timer_easy"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/easy"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_width="40dp"
+            android:layout_height="90dp"
+            android:layout_toRightOf="@id/min"
+            android:gravity="center"
+            android:text=" : "
+            android:textColor="@color/lemon"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/sec"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_toRightOf="@id/colon"
+            android:background="@drawable/timer_easy"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/easy"
+            android:textSize="35sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerTimer"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-->********************QUESTION 1**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/lemon"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Grand Canyon is in Arizona."
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/q1o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/easy"
+                            android:text="True"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q1o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:buttonTint="@color/easy"
+                            android:text="False"
+                            android:textColor="@color/kidsText" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-->********************QUESTION 2**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/lemon"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Which country is the world’s biggest producer of coffee?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/q2o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/easy"
+                            android:text="Croatia"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q2o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:buttonTint="@color/easy"
+                            android:text="Brazil"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q2o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:buttonTint="@color/easy"
+                            android:text="Argentina"
+                            android:textColor="@color/kidsText" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 3**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/lemon"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What does the F stand for in FBI?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/q3o"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/easy"
+                        android:gravity="center"
+                        android:textColor="@color/kidsText"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 4**************************<-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/lemon"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Union Territories of India"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <CheckBox
+                            android:id="@+id/q4o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:buttonTint="@color/easy"
+                            android:text="Puducherry"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o1"
+                            android:buttonTint="@color/easy"
+                            android:text="Andaman and Nicobar Islands"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o2"
+                            android:buttonTint="@color/easy"
+                            android:text="Delhi"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o3"
+                            android:buttonTint="@color/easy"
+                            android:text="Daman and Diu"
+                            android:textColor="@color/kidsText" />
+
+                        <CheckBox
+                            android:id="@+id/q4o5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/q4o4"
+                            android:buttonTint="@color/easy"
+                            android:text="Chandigarh"
+                            android:textColor="@color/kidsText" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 5********************<-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/lemon"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What colour is associated with the breast Cancer charity?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+
+                            android:id="@+id/q5o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/easy"
+                            android:text="Pink"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q5o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43dp"
+                            android:buttonTint="@color/easy"
+                            android:text="White"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q5o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43dp"
+                            android:buttonTint="@color/easy"
+                            android:text="Purple"
+                            android:textColor="@color/kidsText" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-->********************QUESTION 6********************<-->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/lemon"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mozzarella Cheese is made from the milk of which animal?"
+                        android:textColor="@color/kidsText"
+                        android:textSize="18sp"
+
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/rg4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+
+                            android:id="@+id/q6o1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/easy"
+                            android:text="Cow"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q6o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43dp"
+                            android:buttonTint="@color/easy"
+                            android:text="Buffalo"
+                            android:textColor="@color/kidsText" />
+
+                        <RadioButton
+                            android:id="@+id/q6o3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="43dp"
+                            android:buttonTint="@color/easy"
+                            android:text="Camel"
+                            android:textColor="@color/kidsText" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/lemon"
+                android:elevation="7dp"
+                android:onClick="CalcScore"
+                android:text="SUBMIT"
+                android:textColor="@color/kidsText" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+

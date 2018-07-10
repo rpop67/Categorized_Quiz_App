@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rules"
+    tools:context="com.example.android.quiz_app_abnd_project.rules">
+
+    <TextView
+        android:id="@+id/ruletitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:gravity="center"
+        android:text="RULES"
+        android:textColor="@color/rulesDark"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/rule1"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ruletitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Choose difficulty level "
+        android:textColor="@color/rules"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rule2"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Timer is set to two mins"
+        android:textColor="@color/rules"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rule3"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Answer questions in time"
+        android:textColor="@color/rules"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rule4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Hit submit button for score"
+        android:textColor="@color/rules"
+        android:textSize="20sp" />
+</RelativeLayout>
